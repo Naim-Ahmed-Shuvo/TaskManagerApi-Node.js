@@ -13,7 +13,7 @@ app.use(taskRoutes);
 app.listen(port, () => {
   console.log("Server is up on port:" + port);
 });
-
+// console.log(process.env.MONGODB_URL);
 // app.use((req, res, next) => {
 //   if(req.method === "GET"){
 //     res.send('GET request are disable');
@@ -42,14 +42,11 @@ app.listen(port, () => {
 //   }
 // })
 
-
 // app.post('/upload',upload.single('upload') , (req, res) => {
 //   res.send();
 // },(error,req,res,next)=>{
 //   res.status(400).send({error: error.message});
 // })
-
-
 
 // const jwt = require("jsonwebtoken");
 // const myFnc = async () => {
